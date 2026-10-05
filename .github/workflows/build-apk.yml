@@ -39,7 +39,7 @@ jobs:
       - name: Build debug APK
         working-directory: PES_CPK_Tool_Android_build/PES_CPK_Tool_Android
         run: |
-          gradle --no-daemon assembleDebug
+          gradle --no-daemon -Pandroid.useAndroidX=true assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
