@@ -34,7 +34,7 @@ jobs:
         run: |
           rm -rf PES_CPK_Tool_Android_build
           mkdir PES_CPK_Tool_Android_build
-          unzip -q PES_CPK_Tool_Android.zip -d PES_CPK_Tool_Android_build
+          unzip -q PES_CPK_Tool_Android_v2.1.zip -d PES_CPK_Tool_Android_build
 
       - name: Build debug APK
         working-directory: PES_CPK_Tool_Android_build/PES_CPK_Tool_Android
