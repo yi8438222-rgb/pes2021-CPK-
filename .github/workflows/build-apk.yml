@@ -34,7 +34,7 @@ jobs:
         run: |
           rm -rf PES_CPK_Tool_Android_build
           mkdir PES_CPK_Tool_Android_build
-          unzip -q PES_CPK_Tool_Android_v3.2.zip -d PES_CPK_Tool_Android_build
+          unzip -q PES_CPK_Tool_Android_v3.3.zip -d PES_CPK_Tool_Android_build
 
       - name: Build debug APK
         working-directory: PES_CPK_Tool_Android_build/PES_CPK_Tool_Android
@@ -44,6 +44,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: PES-CPK-Tool-debug-APK-v3.2
+          name: PES-CPK-Tool-debug-APK-v3.3
           path: PES_CPK_Tool_Android_build/PES_CPK_Tool_Android/app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
